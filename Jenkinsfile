@@ -4,7 +4,7 @@ node {
     git credentialsId: 'githubID', url: 'https://github.com/itrainpadman/maven-examples.git'  
    }
    stage('Code Build') {
-    withMaven(jdk: 'JDK-1.8.0', maven: 'Maven-3.6.1') {
+    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
      sh 'mvn clean compile'
     }  
    }
